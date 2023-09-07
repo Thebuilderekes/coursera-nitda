@@ -1,0 +1,8 @@
+## Client side validation
+
+- empty forms should not be submitted
+- Password length
+- min-length and max-length can be added to imput tags to specify length of characters
+- input:focus:invalid { } in css to set border color to red when the user enters invalid data
+- value can be set for input radio to take on a value that indicates the number. e.g value = 6 name=size
+
