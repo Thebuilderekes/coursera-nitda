@@ -1,4 +1,4 @@
-## Client side validation
+## Client side validation with forms
 
 ### Form validation
 
@@ -17,7 +17,7 @@ Forms have attributes available to cater to any condition you can think of.
   When filling in HTML forms, we expect users to abide by certain rules, like using numbers when asked to, or properly formatting a URL or an email when needed. However, humans are prone to errors and in some cases, they may overlook some of the data they input. That’s why it’s important to ensure the shape of the data we expect in each field is correct. HTML form validation is a set of attributes we can add to form inputs to perform automatic validation on the user’s behalf.
   The most important attributes you’ll find yourself using for validation are the following.
 
-Required
+``Required`
 Denotes a mandatory input that the user can’t leave empty. It can be used with any input type, like password, radio, text and so on.
 
 <input type="text" id="firstName" name="firstName" required>
@@ -32,7 +32,7 @@ Specifies the minimum length of a text input. If set, the input will not accept 
 
 <input type="password" id="password" name="password" minlength="8">
 
-Min and max attributes
+`Min and max attributes`
 Determine the minimum and maximum values allowed for an input field. They are usually applied to numerical text inputs, range inputs or dates.
 
 <input type="number" id="quantity" name="quantity" min="1" max="10">
@@ -44,15 +44,18 @@ Indicates that the user can enter more than one value in a single input field. T
 
 <input type="file" id="gallery" name="gallery" multiple>
 
-Pattern
-Defines a particular pattern that an input field value has to fulfill to be considered valid. This attribute expects a regular expression to specify the pattern. It works with text, date, search, URL, tel, email and password input types. For example, you can restrict phone numbers to be only from the UK.
+`Pattern`
+Defines a particular pattern that an input field value has to fulfill to be considered valid. This attribute expects a regular expression to specify the pattern. It works with text, date, search, URL, tel, email and password input types. For example, you can restrict sphone numbers to be only from the UK.
 <input type="tel" id="phone" name="phone" pattern=”^(?:0|\+?44)(?:\d\s?){9,10}$” >
 
-### Browser differences
+### Forms and data sending
 
-Forms appear diffferntly accross browsers
-inputs, checkboxes
+Problems using GET METHOD
 
-#### How to solve inconsistency accrosee browsers\
+- Length of URL is limited to 200 characters depending on the browwer. If you have a large form some data may be lost when it is send via GET method.
+- Security threats because length on requested URL is limited on some browsers
+  since data is included as part of URL, the data is stored in the web browser history.
 
-- Use CSS to style them, avoid leaving them on default styles. This will promote consistency accorss browsers
+/\*_
+HTTP POST request is more secure that HTTP GET request method
+_/
