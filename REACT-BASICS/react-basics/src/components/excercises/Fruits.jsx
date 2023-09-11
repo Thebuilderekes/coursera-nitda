@@ -1,4 +1,3 @@
-// import { useFruits } from "./CustomHook"; // Import the custom hook
 import FruitsCounter from "./FruitsCounter";
 import { useContext } from "react";
 import { FruitsContext } from "./FruitsContext";
@@ -11,7 +10,7 @@ function Fruits() {
 			{fruits.map((f) => (
 				<p key={f.id}>{f.fruitName}</p>
 			))}
-			<FruitsCounter />
+			<FruitsCounter fruits={fruits} />
 		</div>
 	);
 }
