@@ -1,3 +1,9 @@
+## let, const and var keywords
+
+- `let` and `const` are blocked scope while var is function scoped.
+- A variable declared with `let` cannot be redeclared and reassigned with `let`.
+- A variable declared with `const` must be assigned during declaration.
+
 ## Error Handling
 
 An error can be defined as a faulty peiecs of code that can be thrown to cause a program to stop
