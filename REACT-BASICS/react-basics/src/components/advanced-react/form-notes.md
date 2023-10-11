@@ -13,7 +13,9 @@
 - e.preventDefault() to disable default behavior of the form that casues it refresh on each submit button click, 
 should be used if you’d like to better control the submission of a form you’re creating for an app.
 
-- be careful not to disable the button as this can harm acessibility, 
+- be careful not to disable the button as this can harm acessibility,
+
+
 
 
 ## contolled components working with forms
@@ -47,7 +49,7 @@ const Form = () => {
 ```
 
 
-## unvontrolled component
+## uncontrolled component
 
 Uncontrolled components are the simplest way to implement form inputs. There are certainly valued cases for them, especially when your form is straightforward. Unfortunately, they are not as powerful as their counterpart, so let's look at controlled inputs next.
 handled by the dom itself and uses useRef hook
