@@ -1,4 +1,6 @@
-HTML stands for Hypertext Markup Language. But what does that mean? Hypertext is text which contains links to other text. Markup refers to tags and elements used within a document. HTML elements with their opening and closing tags in angle brackets make up an HTML document.
+HTML stands for Hypertext Markup Language. But what does that mean?
+Hypertext is text which contains links to other text. Markup refers to tags and elements used within a document.
+HTML elements with their opening and closing tags in angle brackets make up an HTML document.
 
 These elements form thestructure of a webpage and describe what to display to the web browser. When it comes to HTML, it's important to know about the purpose of HTML in the web browser. The use of
 HTML tags and correct syntax, and how HTML elements are used in a web document. But
@@ -77,3 +79,12 @@ important og tags to be added to the head are:
 - type
 - image
 - url
+
+Here are some links to do extra reading:
+https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio
+
+https://www.sitepoint.com/client-side-form-validation-html5/
+https://www.the-art-of-web.com/html/html5-form-validation/
+https://www.webfx.com/web-design/learn/why-does-your-website-look-different-in-different-browsers/
