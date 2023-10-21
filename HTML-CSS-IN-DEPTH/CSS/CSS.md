@@ -13,6 +13,8 @@ for example you have 3 anchor link elements all but one haveing a class:
 
 using the attribute selector `a[class]` in the css, you can target the home and about links, leaving the contact list out because it does not have a class attribute set on it.
 
+`a[href~="dog"]` selects all HTML elements with an href attribute that contains the string "dog". The ~ operator matches any string that contains the specified substring, anywhere in the string.
+
 ## Pseudoclasss for links
 
 pseudo classes for the state of links have to be used in the right order IN A CSS FILE. This is the order:
@@ -40,77 +42,87 @@ Excess of it can be distracting
 
 ### Types of text effects
 
-- text-overflow: ellipses. used for ... effect at the end of text to show that ther're more to the text
+- `text-overflow: ellipses;` used for ... effect at the end of text to show that ther're more to the text
 - text clip property
-- writing mode: vertical-rl - used to flip text vertically on screen
+- `writing mode: vertical-rl;` - used to flip text vertically on screen
 
+##CSS animations
 
- ##CSS animations
-
- ``
- @keyframe animationname {
-   from {color:blue}
-   to {color red}
- }
+``
+@keyframe animationname {
+from {color:blue}
+to {color red}
+}
 
 to set the animation to be used as a property in CSS you can use the animation rule like this:
 
 animation : animationname duration timing-function
- ``
- Default timing function value is ease. To make an animation to move ata aconstant speed, change the default timing function toto linear
+``
+Default timing function value is ease. To make an animation to move ata aconstant speed, change the default timing function toto linear
 
 https://www.lambdatest.com/blog/css-transforms-and-transitions-property/
 https://www.opendesignsin.com/blog/10-web-design-effects-to-enhance-your-website/
 https://www.w3schools.com/css/css3_animations.asp
- https://dev.to/kiranrajvjd/simple-text-effects-using-css-3dgp
+https://dev.to/kiranrajvjd/simple-text-effects-using-css-3dgp
 https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes
 https://freefrontend.com/css-animation-examples/
 https://freefrontend.com/css-typing-text/
 https://goingclear.com/website-effects
-
 
 ##Browse more best practices for writing CSS
 
 - Use style linter extensions link stylelint to help check for errors in your CSS file.
 
 ### How to use style lint
-* Step 1: download and instalkl style lint extenstion
-* Step 2: Ensure it is enabled
-Once installed, the button will be replaced by the ‘Disable’ and ‘Uninstall’ button.
-If you see ‘Enable’ instead of ‘Disable’, click on ‘Enable’ and make sure the extension is enabled. 
-* Step 3: Create and add a file called ‘.stylelinttrc.json’ to your project directory
-The extension will look for this file inside any project folder you are working with. 
-Add the rules in JSON object format as below, these are the same as the ones you used in ‘Handling errors
+
+- Step 1: download and instalkl style lint extenstion
+- Step 2: Ensure it is enabled
+  Once installed, the button will be replaced by the ‘Disable’ and ‘Uninstall’ button.
+  If you see ‘Enable’ instead of ‘Disable’, click on ‘Enable’ and make sure the extension is enabled.
+- Step 3: Create and add a file called ‘.stylelinttrc.json’ to your project directory
+  The extension will look for this file inside any project folder you are working with.
+  Add the rules in JSON object format as below, these are the same as the ones you used in ‘Handling errors
 
 ``
-{ 
-"rules": { 
+{
+"rules": {
 
-        "alpha-value-notation": "number", 
-        "selector-type-case": "lower", 
-        "color-no-hex": true 
+        "alpha-value-notation": "number",
+        "selector-type-case": "lower",
+        "color-no-hex": true
+
 }
 
-} 
+}
 ``
 These are just a few rules as you can add more rules to the file.
 
 - overspecificity can slow down browser
 - When you miss a semi colon in css everything before the line that has the missed semi colon works with teh exception of the line just imediately after the mistake.
 
-
 ### Browser specific issues
-Use CSS resets for all stylesheets
+
+Use CSS resets for all stylepsheets use this reset: https://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/Z:
 Find out the possible differences in differences between browsers in terms of using CSS animations and theircompatibilty between browsers.
+
 - media query settings
 
-
 ## UI testing strategies
-Cross device testing - most commonly used
+
+Cross device testing - most commonly used type of testing
 Visual regression testing - read up on this
 Automated user acceptance testing - read up on this
 
+### Useful links to get better at CSS
 
-
-
-
+https://www.lambdatest.com/blog/top-5-browser-compatibility-issues-in-css-for-developers-in-2021/
+https://www.freecodecamp.org/news/how-to-tackle-css-specificity-issues-and-when-to-use-the-important-keyword-b54123995e1a/
+https://www.lambdatest.com/blog/top-5-browser-compatibility-issues-in-css-for-developers-in-2021/
+https://www.simplilearn.com/tutorials/css-tutorial/webkit-css
+https://www.sitepoint.com/study-errors-beginners-make-learning-html-css/
+https://www.webfx.com/blog/web-design/12-common-css-mistakes-web-developers-make/
+http://csslint.net/
+https://caniuse.com/
+https://jigsaw.w3.org/css-validator/
+https://learner.coursera.help/hc/en
+https://stylelint.io/
